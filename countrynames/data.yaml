@@ -1262,6 +1262,11 @@ AR:
   - Arjentina
   - Arizantin
   - Huajendina
+  # Common misspellings
+  - Argintina
+  - Argentena
+  - Argentinia
+  - Argantina
   - Yr Ariannin
   - Аржентина
   - Argentína
@@ -5648,6 +5653,13 @@ CN:
   - Қытай
   - Tsáina
   - An tSín
+  # Alternative English names
+  - China
+  - People's Republic of China
+  - PRC
+  # Common misspellings
+  - Chyna
+  - Chian
 CO:
   - ਕੋਲੰਬੀਆ
   - Kɔlɔ́mbía
@@ -6663,6 +6675,15 @@ DE:
   - Герман
   - Huujerumani
   - Đức
+  # Enhanced translations
+  - Deutschland
+  - Federal Republic of Germany
+  - Bundesrepublik Deutschland
+  - FRG
+  - West Germany
+  # Common misspellings
+  - Germny
+  - Gremany
 DJ:
   - Gyibuti
   - ጂቡቲ
@@ -7890,6 +7911,13 @@ ES:
   - Sepanyol
   - Calatayud
   - Barcelona
+  # Enhanced translations
+  - España
+  - Reino de España
+  - Kingdom of Spain
+  # Common misspellings
+  - Span
+  - Spian
 IC:
   - Canary Islands
   - canary islands
@@ -8733,6 +8761,13 @@ FR:
   - ଫ୍ରାନ୍ସ
   - Paris
   - Parisienne
+  # Enhanced translations
+  - France
+  - République française
+  - French Republic
+  # Common misspellings
+  - Frace
+  - Frannce
 GA:
   - گابن
   - Գաբոն
@@ -9167,6 +9202,16 @@ GB:
   - coumpanies house uk
   - companies house wales
   - Regatul Unit al Marii Britanii şi al Irlandei de Nord
+  # Alternative English names
+  - UK
+  - U.K.
+  - Britain
+  - Great Britain
+  - England
+  - British Isles
+  # Common misspellings
+  - Untied Kingdom
+  - Britian
 GD:
   - Gelenadɛ
   - ഗ്രനേഡ
@@ -12736,6 +12781,13 @@ IT:
   - Sicily
   - Sardinian
   - Sardinia
+  # Enhanced translations
+  - Italia
+  - Repubblica Italiana
+  - Italian Republic
+  # Common misspellings
+  - Itally
+  - Itlay
 JE:
   - Selusī
   - Geirsí
@@ -13195,6 +13247,13 @@ JP:
   - Yamagata
   - Yamaguchi
   - Yamanashi
+  # Enhanced translations
+  - 日本
+  - Nihon
+  - Nippon
+  # Common misspellings
+  - Japn
+  - Japon
 KE:
   - Kénya
   - ⴽⵉⵏⵢⴰ
@@ -25741,6 +25800,20 @@ US:
   - ა შ შ  (USA)
   - ა შ შ
   - დელავერის შტატი
+  # Alternative English names
+  - United States of America
+  - USA
+  - U.S.A.
+  - U.S.
+  - America
+  - U.S. of A.
+  - United States
+  - US of A
+  # Common misspellings  
+  - Untied States
+  - United Staes
+  - United State
+  - Amercia
 UY:
   - Orogoay
   - उरुग्वे
