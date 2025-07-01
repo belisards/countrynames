@@ -41,3 +41,85 @@ def test_GB():
     assert to_code(text) == "GB"
     text = "United Kingdom of Great Britain and Northern Ireland"
     assert to_code(text, fuzzy=True) == "GB"
+
+
+def test_alternative_english_names():
+    """Test alternative English names for countries"""
+    # US alternatives
+    assert to_code("United States of America") == "US"
+    assert to_code("USA") == "US"
+    assert to_code("U.S.A.") == "US"
+    assert to_code("U.S.") == "US"
+    assert to_code("America") == "US"
+    assert to_code("U.S. of A.") == "US"
+    assert to_code("US of A") == "US"
+    
+    # UK alternatives
+    assert to_code("UK") == "GB"
+    assert to_code("U.K.") == "GB"
+    assert to_code("Britain") == "GB"
+    assert to_code("Great Britain") == "GB"
+    assert to_code("England") == "GB"
+    assert to_code("British Isles") == "GB"
+
+
+def test_common_misspellings():
+    """Test mapping of common misspellings to correct country codes"""
+    # Argentina misspellings
+    assert to_code("Argintina") == "AR"
+    assert to_code("Argentena") == "AR"
+    assert to_code("Argentinia") == "AR"
+    assert to_code("Argantina") == "AR"
+    
+    # US misspellings
+    assert to_code("Untied States") == "US"
+    assert to_code("United Staes") == "US"
+    assert to_code("United State") == "US"
+    assert to_code("Amercia") == "US"
+    
+    # Germany misspellings
+    assert to_code("Germny") == "DE"
+    assert to_code("Gremany") == "DE"
+    
+    # Spain misspellings
+    assert to_code("Span") == "ES"
+    assert to_code("Spian") == "ES"
+    
+    # France misspellings
+    assert to_code("Frace") == "FR"
+    assert to_code("Frannce") == "FR"
+    
+    # Italy misspellings
+    assert to_code("Itally") == "IT"
+    assert to_code("Itlay") == "IT"
+    
+    # UK misspellings
+    assert to_code("Untied Kingdom") == "GB"
+    assert to_code("Britian") == "GB"
+
+
+def test_enhanced_translations():
+    """Test enhanced translations for major languages"""
+    # German translations
+    assert to_code("Deutschland") == "DE"
+    assert to_code("Bundesrepublik Deutschland") == "DE"
+    
+    # Spanish translations
+    assert to_code("España") == "ES"
+    assert to_code("Reino de España") == "ES"
+    
+    # French translations
+    assert to_code("République française") == "FR"
+    
+    # Italian translations
+    assert to_code("Italia") == "IT"
+    assert to_code("Repubblica Italiana") == "IT"
+
+
+def test_three_letter_codes_enhanced():
+    """Test that enhanced names also work with 3-letter codes"""
+    assert to_code_3("USA") == "USA"
+    assert to_code_3("Deutschland") == "DEU"
+    assert to_code_3("España") == "ESP"
+    assert to_code_3("Italia") == "ITA"
+    assert to_code_3("Argintina") == "ARG"
